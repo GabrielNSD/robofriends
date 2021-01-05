@@ -29,7 +29,6 @@ const mapDispatchToProps = (dispatch) => {
 
 
 const App = (props) => {
-  console.log(props)
   //const [robots, setRobots] = useState([]);
   //const [searchfield, setSearchfield] = useState("");
   const { searchField, onSearchChange, robots, isPending } = props;
