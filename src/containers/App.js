@@ -9,7 +9,7 @@ import ErrorBoundry from "../components/ErrorBoundry";
 import Header from "../components/Header";
 
 const App = () => {
-  const [robots, setRobots] = useState([]);
+  //const [robots, setRobots] = useState([]);
   const [searchfield, setSearchfield] = useState("");
   const { searchField, onSearchChange, robots, isPending } = props;
 
