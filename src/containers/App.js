@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { connect } from "react-redux";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
@@ -10,24 +11,26 @@ import Header from "../components/Header";
 const App = () => {
   const [robots, setRobots] = useState([]);
   const [searchfield, setSearchfield] = useState("");
+  const { searchField, onSearchChange, robots, isPending } = props;
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    /* fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((users) => {
         setRobots(users);
-      });
+      }); */
+    props.onRequestRobots();
   }, []);
 
-  const onSearchChange = (event) => {
+  /*  const onSearchChange = (event) => {
     setSearchfield(event.target.value);
   };
-
+ */
   const filteredRobots = robots.filter((robot) => {
-    return robot.name.toLowerCase().includes(searchfield.toLowerCase());
+    return robot.name.toLowerCase().includes(searchField.toLowerCase());
   });
 
-  return !robots.length ? (
+  return isPending ? (
     <h1>Loading</h1>
   ) : (
     <div className="tc">
@@ -83,4 +86,4 @@ const App = () => {
   }
 } */
 
-export default App;
+export default connect(mapStateTpProps, mapDispatchToProps)(App);
