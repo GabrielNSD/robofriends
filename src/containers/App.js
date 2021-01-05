@@ -7,11 +7,33 @@ import "./App.css";
 import ErrorBoundry from "../components/ErrorBoundry";
 
 import Header from "../components/Header";
+import { setSearchField, requestRobots} from "../actions"
+//import { requestRobots } from "../reducers";
 
-const App = () => {
+const mapStateToProps = state => {
+  return {
+    searchField: state.searchRobots.searchField,
+    robots: state.requestRobots.robots,
+    isPending: state.requestRobots.isPending,
+    error: state.requestRobots.error
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+    onRequestRobots: () => dispatch(requestRobots())
+  }
+}
+
+
+
+const App = (props) => {
+  console.log(props)
   //const [robots, setRobots] = useState([]);
-  const [searchfield, setSearchfield] = useState("");
+  //const [searchfield, setSearchfield] = useState("");
   const { searchField, onSearchChange, robots, isPending } = props;
+  
 
   useEffect(() => {
     /* fetch("https://jsonplaceholder.typicode.com/users")
@@ -86,4 +108,4 @@ const App = () => {
   }
 } */
 
-export default connect(mapStateTpProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
