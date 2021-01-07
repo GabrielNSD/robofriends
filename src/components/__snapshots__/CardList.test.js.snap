@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render Card Component 1`] = `
+<div>
+  <Card
+    email="aaa@mail.com"
+    id={1}
+    key="0"
+    name="AAA"
+  />
+</div>
+`;
+
+exports[`expect to render Card Component react test render 1`] = `
+<div>
+  <div
+    className="tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5"
+  >
+    <img
+      alt="robots"
+      src="https://robohash.org/1?size=200x200"
+    />
+    <div>
+      <h2>
+        AAA
+      </h2>
+      <p>
+        aaa@mail.com
+      </p>
+    </div>
+  </div>
+</div>
+`;
