@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders MainPAge without crashing 1`] = `
+<div
+  className="tc"
+>
+  <Memo() />
+  <CounterButton />
+  <SearchBox />
+  <Scroll>
+    <ErrorBoundry>
+      <CardList
+        robots={Array []}
+      />
+    </ErrorBoundry>
+  </Scroll>
+</div>
+`;
