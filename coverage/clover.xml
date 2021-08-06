@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1610033379106" clover="3.2.0">
-  <project timestamp="1610033379106" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
-    <file name="Card.js" path="/home/gabrielnsd/Documents/web-dev-course/section19/robofriends/src/components/Card.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-    </file>
+<coverage generated="1610053015042" clover="3.2.0">
+  <project timestamp="1610053015042" name="All files">
+    <metrics statements="15" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="1" elements="25" coveredelements="7" complexity="0" loc="15" ncloc="15" packages="2" files="2" classes="2"/>
+    <package name="components">
+      <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <file name="MainPage.js" path="/home/gabrielnsd/Documents/web-dev-course/section19/robofriends/src/components/MainPage.js">
+        <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="2" type="cond" truecount="1" falsecount="1"/>
+      </file>
+    </package>
+    <package name="containers">
+      <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="App.js" path="/home/gabrielnsd/Documents/web-dev-course/section19/robofriends/src/containers/App.js">
+        <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
