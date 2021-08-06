@@ -5,6 +5,7 @@ import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
 import "./App.css";
 import ErrorBoundry from "../components/ErrorBoundry";
+import CounterButton from "../components/CounterButton"
 
 import Header from "../components/Header";
 import { setSearchField, requestRobots} from "../actions"
@@ -56,6 +57,7 @@ const App = (props) => {
   ) : (
     <div className="tc">
       <Header />
+      <CounterButton />
       <SearchBox searchChange={onSearchChange} />
       <Scroll>
         <ErrorBoundry>
