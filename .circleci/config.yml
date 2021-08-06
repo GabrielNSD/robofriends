@@ -6,6 +6,8 @@ jobs:
     steps:
       - checkout
       - run: echo "npm installing"
+      - run: rm -rf node_modules
+      - run: rm -f package-lock.json
       - run: npm install
       - run: CI=true npm run build
   test:
