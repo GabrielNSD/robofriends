@@ -16,6 +16,7 @@ jobs:
     steps:
       - checkout
       - run: echo "testing stuff"
+      - run: npm install react-scripts
       - run: npm test
   hithere:
     docker:
